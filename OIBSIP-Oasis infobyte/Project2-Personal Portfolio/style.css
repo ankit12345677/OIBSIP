@@ -1,0 +1,385 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Apply a basic font style */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add a global container style */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+/* Navigation styles */
+.navContainer {
+    background: #121212;
+    color: white;
+    padding: 12px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navContainer .heading h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f87737; /* Change color on hover */
+}
+
+/* Home Section styles */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logoContainer {
+    margin-bottom: 20px;
+}
+
+#sw-js-blob-svg {
+    width: 360px;
+    height: auto;
+}
+
+.welcomeContainer {
+    margin-top: 20px;
+}
+
+.welcomeContainer h1 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.creativeHead {
+    margin-top: 20px;
+}
+
+.creativeHead h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.creativeHead h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.creativeHead p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* About Section styles */
+.about-container {
+    padding: 70px 20px;
+}
+
+.about-card {
+    background: #413f3fa4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #f87737;
+}
+
+p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.tab-conts ul li {
+    list-style: none;
+    color: #999;
+    border-bottom: 2px solid black;
+    margin-bottom: 12px;
+}
+
+.tab-conts ul li span {
+    color: #f87737;
+    font-size: 14px;
+}
+
+/* Portfolio Section styles */
+.portfolio-container {
+    padding: 20px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-card {
+    background-color: #413f3fa4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    padding: 60px;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image {
+    height: 150px;
+    background-size: cover;
+}
+
+.portfolio-content {
+    padding: 20px;
+}
+
+h3 {
+    color: #f87737;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #999;
+    line-height: 1.5;
+}
+
+.view-details {
+    display: block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+
+h4 {
+    color: #f87737;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.additional-info p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Service Section styles */
+.service-container {
+    padding: 200px 20px;
+}
+
+.service-title {
+    margin-bottom: 20px;
+    color: #f87737;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    position: relative;
+    background: #121212;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #413f3fa4;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.service-icon-box {
+    margin-bottom: 10px;
+}
+
+.service-icon-box img {
+    width: 40px;
+}
+
+.service-content-box {
+    text-align: center;
+}
+
+.service-item-title {
+    color: #f87737;
+    margin-bottom: 7px;
+}
+
+.service-item-text {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Contact Section styles */
+#contact {
+    padding: 40px 20px;
+}
+
+.contact-l h1 {
+    color: #f87737;
+}
+
+.contact-r {
+    flex-basis: 60%;
+}
+
+.contact-r form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid #121212;
+    border-radius: 8px;
+    outline: none;
+}
+
+form .btncv {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #f87737;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#submit-msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+/* Footer Section styles */
+.footer-section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #121212;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .navContainer{
+        flex-direction: column;
+    }
+     nav{
+        padding: 5px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;   
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin-left: 12px;
+        margin-bottom: 10px;
+      
+    }
+
+    .homeContainer {
+        height: auto;
+    }
+
+    .creativeHead {
+        transform: translate(0, 0);
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+}

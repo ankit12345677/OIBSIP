@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="tem-body-container">
+        <header class="top-header">
+            <nav>
+                <div class="Logo-temp">TCONVERTER</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="temp-main-body">
+                    <div class="heading">
+                        <h1>TEMPERATURE CONVERTER</h1>
+                    </div>
+                    <div class="temp-body">
+                        <div class="section-con">
+                            <div class="temp-sec-cont1">
+                                <div class="degrees-sec">
+                                    <h3>Enter Temperature</h3>
+                                    <input type="number" id="temperatureInput" placeholder="Enter temperature">
+                                </div>
+                                <div class="unit-con">
+                                    <h3>Unit</h3>
+                                    <label><input type="radio" name="unit" value="Celsius" checked> Celsius</label>
+                                    <label><input type="radio" name="unit" value="Fahrenheit"> Fahrenheit</label>
+                                    <label><input type="radio" name="unit" value="Kelvin"> Kelvin</label>
+                                </div>
+                                <div class="Results-con">
+                                    <h3>Converted Temperature</h3>
+                                    <input type="text" id="convertedTemperature" readonly>
+                                </div>
+                            </div>
+                            <div class="temp-sec-cont2">
+                                <label for="tempC">Conversion Unit</label>
+                                <div>
+                                    <select id="tempC">
+                                        <option value="Celsius">Celsius</option>
+                                        <option value="Fahrenheit">Fahrenheit</option>
+                                        <option value="Kelvin">Kelvin</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-button"><button onclick="convertTemperature()">Convert</button></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
