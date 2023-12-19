@@ -15,13 +15,23 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 
-document.getElementById('downloadLink').addEventListener('click', function () {
+function downloadPDF() {
     // Replace the URL below with the actual path to your PDF file
-    var pdfUrl = './Project2-Personal Portfolio/AnkitChoubeyResume.pdf';
-    
-    // Open a new window/tab with the PDF file
-    window.open(pdfUrl, '_blank');
-});
+    var pdfUrl = './AnkitChoubeyResume.pdf';
+
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.target = '_blank';
+    link.download = 'AnkitChoubeyResume.pdf';
+
+    // Append the link to the document and trigger a click event
+    document.body.appendChild(link);
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+}
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
